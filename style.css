@@ -17,6 +17,9 @@ header,footer,main{
       
     width: 100%;
 }
+footer h3{
+    font-size: 1 rem;
+}
 main{
     flex: 1;
     display: flex;
