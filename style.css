@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+header,footer,main{
+      
+    width: 100%;
+}
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+header ,footer{
+    color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+.container{
+    border-radius: 22px;
+    box-shadow: 0 0 35px rgb(0, 102, 255);
+    border: 8px solid plum;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: plum;
+    gap: 20px;
+}
+.inner-cont1{
+   
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.inner-cont2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.inner-cont21{
+ color: rgb(255, 255, 255);
+ flex: 1;
+ font-size: 1.2rem;
+ display: flex;
+ gap: 15px;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.inner-cont22{
+    
+   
+    box-shadow: 0 0 10px rgb(221, 6, 245);
+    color:  rgb(164, 180, 203);
+ font-size: 1.3rem;
+ font-weight: bold;
+ margin-right: 5px;
+ padding: 10px;
+border-radius: 22px;
+ 
+}
+.progress-bar{
+ box-shadow: 0 0 10px rgb(0, 102, 255);
+width: 100%;
+height: 8px;
+border-radius: 22px;
+overflow: hidden;
+}
+.progress{
+  width: 0;
+  height: 100%;
+  background-color: rgb(40, 43, 222);
+  transition: width 0.3s ease;
+}
+.inner-cont3{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+     gap: 20px;
+}
+.inner-cont4{
+    padding: 20px 0 20px 0;
+     box-shadow: 0 0 10px rgb(220, 6, 177);
+     border-radius: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-cont3 input{
+    background: black;
+     box-shadow: 0 0 10px rgb(111, 122, 139);
+    width: 80%;
+   padding: 10px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    
+    
+      
+}
+.inner-cont3 input:hover{
+    box-shadow: 0 0 10px rgb(224, 229, 236);
+}
+.inner-cont3 button{
+    border-radius: 20px;
+    padding: 5px;
+    background: black;
+    color: aliceblue;
+    text-align: center;
+    outline: none;
+    border: none;
+     box-shadow: 0 0 10px rgb(111, 122, 139);
+}
+.inner-cont3 button:hover{
+     box-shadow: 0 0 10px rgb(211, 212, 214);
+}
+.inner-cont3 button:active{
+     box-shadow: 0 0 10px rgb(111, 122, 139);
+}
+.inner-cont3 input::placeholder{
+   color: rgb(255, 255, 255);
+   
+}
+.task-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    
+    
+}
+.task-container li{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 0 10px rgb(111, 122, 139);
+    
+}
+.task-container li button{
+    padding: 5px;
+    background-color: black;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgb(111, 122, 139);
+
+}
+.task-container li button:hover{
+    box-shadow: 0 0 10px rgb(201, 214, 233);  
+}
+.task-container li button:active{
+       box-shadow: 0 0 10px rgb(111, 122, 139);
+}
+.task-container li:hover{
+    box-shadow: 0 0 18px rgb(0, 102, 255);
+}
+.task-container li div{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info input[type="checkbox"]{
+      width: 18px;
+     height: 18px;
+     accent-color: plum;
+}
+.task-container li div span{
+    font-size: 1.2rem;
+}
+ .img{
+     margin-left: 50px;
+     box-shadow: 0 0 10px rgb(224, 229, 236);
+ }
+
+
