@@ -149,7 +149,7 @@ function updateprogress()
     const comp = box.querySelectorAll(".check:checked").length;
     progress.style.width = `${(comp/total)*100}%`;
     completion.textContent = `${comp} / ${total}`;
-    if(comp == total)
+    if(comp == total &&total!=0)
     {
         motivation.textContent = "You Did It 🔥";
     }
