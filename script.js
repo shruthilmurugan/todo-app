@@ -149,7 +149,11 @@ function updateprogress()
     const comp = box.querySelectorAll(".check:checked").length;
     progress.style.width = `${(comp/total)*100}%`;
     completion.textContent = `${comp} / ${total}`;
-    if(comp == total &&total!=0)
+    if(total == 0)
+    {
+        motivation.textContent = "Your List is empty! 🎉";
+    }
+    else if(comp == total )
     {
         motivation.textContent = "You Did It 🔥";
     }
