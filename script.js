@@ -145,20 +145,24 @@ function edittask(edit,span)
 
 function updateprogress()
 {
+    
     const total = box.children.length ; 
     const comp = box.querySelectorAll(".check:checked").length;
-    progress.style.width = `${(comp/total)*100}%`;
     completion.textContent = `${comp} / ${total}`;
-    if(total == 0)
+    if(total ==0)
     {
+        progress.style.width = "0%";
         motivation.textContent = "Your List is empty! 🎉";
     }
-    else if(comp == total )
+    else{
+     progress.style.width = `${(comp/total)*100}%`;
+     if(comp == total )
     {
         motivation.textContent = "You Did It 🔥";
     }
     else{
          motivation.textContent = "You Can Do It 💪 ";
+    }
     }
 }
 
