@@ -18,7 +18,8 @@ header,footer,main{
     width: 100%;
 }
 footer h3{
-    font-size: 1 rem;
+    font-size: 0.8rem;
+    color: gray;
 }
 main{
     flex: 1;
